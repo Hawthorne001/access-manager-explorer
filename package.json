@@ -17,7 +17,7 @@
     "@radix-ui/themes": "^2.0.0",
     "@rainbow-me/rainbowkit": "^1.2.0",
     "@types/qs": "^6.9.8",
-    "@urql/exchange-graphcache": "^6.3.3",
+    "@urql/exchange-graphcache": "^6.5.1",
     "@urql/next": "^1.0.0",
     "addreth": "^1.0.1",
     "class-variance-authority": "^0.7.0",
