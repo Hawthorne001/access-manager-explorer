@@ -16,7 +16,7 @@ import { gtag } from "@/config/site";
 import { Button, Flex, Heading } from "@radix-ui/themes";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 
-const DEMO_MANAGER = "0xc56F7D84c83911767EAcaabA5Ae64A8DFCBC868F";
+const DEMO_MANAGER = "0x320c47384ee1798f458fadf6376492f097cd63c6";
 
 interface Props {}
 
@@ -35,7 +35,7 @@ const Explorer: FC<Props> = () => {
   if (entities.length === 0) {
     return (
       <Flex width="100%" direction="column" justify="center" align="center">
-        <Heading size="3" className="text-center">
+        <Heading as="h1" size="3" className="text-center">
           Not sure where to start? 👇
         </Heading>
         <Button

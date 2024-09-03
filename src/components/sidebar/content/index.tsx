@@ -33,8 +33,6 @@ interface Props {
   onNavigate?: (entity: EntityInstance) => void;
 }
 
-const DEMO_MANAGER = "0x4ee69a1703b717cb46cd12c71c6fe225f646ba1e";
-
 const Content: FC<Props> = ({ onNavigate = () => {} }) => {
   const [open, setOpen] = useState(true);
   const { address, isConnected } = useAccount();
@@ -150,7 +148,7 @@ const Content: FC<Props> = ({ onNavigate = () => {} }) => {
               color="gray"
               onClick={openConnectModal}
             >
-              <Heading size="2" mr="2">
+              <Heading as="h2" size="2" mr="2">
                 Add wallet
               </Heading>
               <PlusIcon width="16" height="16" />
@@ -167,7 +165,7 @@ const Content: FC<Props> = ({ onNavigate = () => {} }) => {
               </Text>
             </Flex>
           ) : (
-            <Heading size="1" ml="4" mb="1">
+            <Heading as="h2" size="1" ml="4" mb="1">
               Member of
             </Heading>
           )}
@@ -181,7 +179,7 @@ const Content: FC<Props> = ({ onNavigate = () => {} }) => {
         </Collapsible.Content>
       </Collapsible.Root>
       <Separator my="3" size="4" />
-      {!isEmpty && <Heading size="1">Favorites</Heading>}
+      {!isEmpty && <Heading as="h2" size="1">Favorites</Heading>}
       {accessManagerFavorites.length > 0 && (
         <FavoritesSection
           name="Access Managers"
